@@ -1,0 +1,1 @@
+zip item.zip files * -x "create_zip.sh"
