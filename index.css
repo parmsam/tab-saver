@@ -1,0 +1,93 @@
+:root {
+    --btn-color-a: #72a3fc;
+    --btn-color-pressed: #2892fc;
+    --ttl-color-a: #2892fc;
+    --btn-color-c: white;
+    --grey: #bababa;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
+}
+
+.title1 {
+    text-align: center;
+    color: var(--ttl-color-a);
+}
+
+.title2 {
+    color: var(--ttl-color-a);
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--btn-color-a);
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: var(--grey);
+}
+
+#btn-div {
+    display:flex;   
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+button {
+    background: var(--btn-color-a);
+    color: var(--btn-color-c);
+    padding: 6px 20px;
+    border: 1px solid var(--btn-color-a);
+    border-radius: 10px;
+    box-shadow: 0 4px #999;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+button:hover {
+    background-color: var(--btn-color-pressed);
+}
+button:active {
+    background-color: var(--btn-color-pressed);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#delete-btn {
+    background: var(--btn-color-c);
+    color: var(--btn-color-a);
+}
+
+#delete-btn:hover {
+    background-color: var(--btn-color-pressed);
+    color: var(--btn-color-c);
+}
+
+#url-content {
+    text-align: left;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    color: var(--btn-color-a);
+}
