@@ -51,3 +51,10 @@ copyBtn.addEventListener("click", function () {
     myLeadsString = myLeads.join('\r\n');
     navigator.clipboard.writeText(myLeadsString);
 })
+
+inputEl.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        inputBtn.click();
+    }
+});
