@@ -90,7 +90,7 @@ button:active {
 
 #url-content {
     text-align: left;
-    height: 100px;
+    height: 85px;
     overflow-y: auto;
 }
 
@@ -98,6 +98,7 @@ ul {
     margin-top: 20px;
     list-style: none;
     padding-left: 0;
+    color: var(--btn-color-a);
 }
 
 li {
@@ -105,5 +106,5 @@ li {
 }
 
 a {
-    color: var(--btn-color-a);
+    color: var(--ttl-color-a);
 }
