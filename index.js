@@ -4,6 +4,7 @@ const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
+const deleteLastBtn = document.getElementById("delete-last-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 const tabBtn = document.getElementById("tab-btn")
 const copyBtn = document.getElementById("copy-btn")
@@ -37,6 +38,12 @@ function render(leads) {
 deleteBtn.addEventListener("click", function() {
     localStorage.clear()
     myLeads = []
+    render(myLeads)
+})
+
+deleteLastBtn.addEventListener("click", function () {
+    localStorage.clear()
+    myLeads.pop()
     render(myLeads)
 })
 

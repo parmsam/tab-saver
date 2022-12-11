@@ -45,6 +45,14 @@ input {
     flex-wrap: wrap;
 }
 
+#clear-div{
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 35px;
+    margin-bottom: 6px;
+}
+
 button {
     background: var(--btn-color-a);
     color: var(--btn-color-c);
@@ -68,6 +76,11 @@ button:active {
 #delete-btn {
     background: var(--btn-color-c);
     color: var(--btn-color-a);
+    flex: 1;
+}
+
+#delete-last-btn {
+    flex: 1;
 }
 
 #delete-btn:hover {
@@ -77,6 +90,8 @@ button:active {
 
 #url-content {
     text-align: left;
+    height: 100px;
+    overflow-y: auto;
 }
 
 ul {
