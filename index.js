@@ -47,11 +47,13 @@ deleteLastBtn.addEventListener("click", function () {
     render(myLeads)
 })
 
-inputBtn.addEventListener("click", function() {
-    myLeads.push(inputEl.value)
-    inputEl.value = ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
-    render(myLeads)
+inputBtn.addEventListener("click", function () {
+    if (inputEl.value != "") {
+        myLeads.push(inputEl.value)
+        inputEl.value = ""
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        render(myLeads)
+    }
 })
 
 copyBtn.addEventListener("click", function () {
