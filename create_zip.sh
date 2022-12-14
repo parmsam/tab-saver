@@ -1,1 +1,1 @@
-zip item.zip files * -x "create_zip.sh"
+zip -r tab-saver-bundle.zip ./ -x "create_zip.sh" -x "*.zip" -x ".git/*" -x ".DS_Store" -x "*.gitignore" -x "tab-saver-bundle/*"
